@@ -1,0 +1,91 @@
+.tt-select {
+	position: relative;
+	height: auto;
+	padding: 0px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.tt-select select {
+	display: none;
+}
+
+.select-selected {
+	background-color: #fff;
+	color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* .select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+} */
+
+/* .select-selected:before {
+	position: absolute;
+	content: "";
+	top: 18px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: transparent transparent #000000 transparent;
+	transform: rotate(180deg);
+} */
+
+.select-selected.select-arrow-active:before {
+	border: none;
+}
+
+/* .select-selected.select-arrow-active:after {
+	border-color: transparent transparent #000000 transparent;
+	top: 10px;
+} */
+
+.select-items div,
+.select-selected {
+	color: #033037;
+	padding: 10px 40px 10px 20px;
+	cursor: pointer;
+}
+
+.select-selected {
+	color: #033037;
+	padding: 10px 40px 10px 20px;
+	border: 1px solid #BABABA;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url('../images/down_icon.svg') no-repeat right #fff;
+	background-position: 93% 50%;
+}
+
+.select-items {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	box-sizing: border-box;
+	border-radius: 8px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 28px;
+	color: #033037;
+
+}
+
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+}
